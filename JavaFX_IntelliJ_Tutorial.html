@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <title>JavaFX_in_IntelliJ</title>
@@ -72,9 +72,9 @@
     <p>First, make sure you have JDK 15. If not, download it from the Oracle website. Next, download JavaFX 15 from the OpenJFX website. Select the “SDK” for your operating system. Install the software in an appropriate location. I recommend “.../Program Files/Java” if you are on Windows. Make sure not to install it over the actual JDK folder. In any case, take note of where you have installed the software, as you will need the path in the next steps.
        To use OpenJFX 15 with JDK 15, you will need to perform a series of steps every time you want to create a JavaFX project:<br>
       <ol>
-       <li>Create a new JavaFX project like usual, by selecting New Project -> JavaFX. Use the latest version of the JDK (15).</li>
-       <li>Add the JavaFX libraries to the project. Go to File -> Project Structure -> Libraries. Click the + sign to add a library. Select Java. You will be asked to select the folder where the library has been installed. Select the path of your OpenJFX installation. You should select the “bin” subfolder. If you installed it in the Java folder, it should be “C:\Program Files\Java\javafx-sdk-15\bin”. Click OK. Optional: You may wish to change the name from “bin” to something more appropriate, like “javafx-sdk-15”. Click OK again to exit this screen.</li>
-       <li>Next, you will have to select custom VM options. Go to Run -> Edit Configurations. Click the arrow icon in the field for VM options to enlarge the input box. In this input box, paste the following text:<br>
+       <li>Create a new JavaFX project like usual, by selecting New Project -> JavaFX. Use the latest version of the JDK (15).</li><br>
+       <li>Add the JavaFX libraries to the project. Go to File -> Project Structure -> Libraries. Click the + sign to add a library. Select Java. You will be asked to select the folder where the library has been installed. Select the path of your OpenJFX installation. You should select the “bin” subfolder. If you installed it in the Java folder, it should be “C:\Program Files\Java\javafx-sdk-15\bin”. Click OK. Optional: You may wish to change the name from “bin” to something more appropriate, like “javafx-sdk-15”. Click OK again to exit this screen.</li><br>
+       <li>Next, you will have to select custom VM options. Go to Run -> Edit Configurations. Click the arrow icon in the field for VM options to enlarge the input box. In this input box, paste the following text:
 --module-path "C:\Program Files\Java\javafx-sdk-15\lib" --add-modules=javafx.controls,javafx.fxml</li>
 
 Make sure paste the text exactly as-is, all spaces and quotes included. The path to JavaFX should be changed to the correct one if you have not installed it in "C:\Program Files\Java\javafx-sdk-15\lib".
