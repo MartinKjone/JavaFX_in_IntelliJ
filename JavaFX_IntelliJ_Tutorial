@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<html>
+<head>
+<title>JavaFX_in_IntelliJ</title>
+
+
+</head>
+
+<!--ADD NAV BAR, AND HEADING BACKGROUND -->
+
+</html>
+<body>
+  <h1>How to get JavaFX to work with IntelliJ.</h1>
+
+  <h2>Introduction</h2>
+    <p>If you are taking the class DAPE1400 Programming at OsloMet,
+    you will need to use JavaFX together with IntelliJ to study
+    the topic of graphical interfaces with Java.
+    Unfortunately, JavaFX is not being included in JDK past version 1.8.
+    This means that you have two options.
+    The first is to install a version of JDK that is 1.8 or earlier and
+    select that every time you want to create JavaFX project.
+    The other option is to install OpenJFX and perform a series of operations
+    every time you want to create a JavaFX project.
+  </p>
+
+
+  <h2>Scenebuilder</h2>
+    <p>
+
+</body>
