@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-<html>
 <head>
 <title>JavaFX_in_IntelliJ</title>
 
@@ -11,6 +10,7 @@
 
 </html>
 <body>
+  <!-- intro text -->
   <h1>How to get JavaFX to work with IntelliJ.</h1>
 
   <h2>Introduction</h2>
@@ -25,8 +25,70 @@
     every time you want to create a JavaFX project.
   </p>
 
-
+  <!-- text 1 -->
   <h2>Scenebuilder</h2>
-    <p>
+    <p>You will need to download and set up Scenebuilder no matter which method you choose.
+       Download it by using the link below. In IntelliJ,
+       go to File -> Settings -> Languages & Frameworks -> JavaFX.
+       Select the correct path. In Windows, it will be
+       “C:\Program Files\SceneBuilder\SceneBuilder.exe”
+       if you have selected the default install location.
 
+       <!--
+       Relevant links:
+
+       Dowload Scenebuilder
+       https://gluonhq.com/products/scene-builder/
+        fix this last part
+       -->
+
+    </p>
+
+  <!-- text 2 -->
+  <h2>Using JDK 1.8</h2>
+    <p>Download version 1.8 of the JDK on the Oracle website. You will need to create an Oracle account and verify your e-mail address.
+       By doing so you agree to receive marketing material from Oracle. You can unsubscribe on this website by entering your e-mail address.
+       Run the installer and install the JDK in the recommended location.
+       To create a JavaFX project, select New Project -> JavaFX in IntelliJ. In the Project SDK field use the drop-down menu to select Java version 1.8.
+       IntelliJ will have detected the installation automatically. If the version has not been auto-detected, you will need to locate it manually by selecting
+       “Add JDK…” in the same menu and selecting the location where it was installed.
+
+<!-- fix this last part
+       Relevant links:
+
+       Create Oracle account
+       https://profile.oracle.com/myprofile/account/create-account.jspx
+
+       Download Java SDK 1.8
+       https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html
+
+       Unsubscribe Oracle marketing
+       https://go.oracle.com/unsubscribe?l_code=en-us&vn=MPRF
+-->
+    </p>
+
+  <!-- text 3 -->
+  <h2>Using OpenJFX</h2>
+    <p>First, make sure you have JDK 15. If not, download it from the Oracle website. Next, download JavaFX 15 from the OpenJFX website. Select the “SDK” for your operating system. Install the software in an appropriate location. I recommend “.../Program Files/Java” if you are on Windows. Make sure not to install it over the actual JDK folder. In any case, take note of where you have installed the software, as you will need the path in the next steps.
+       To use OpenJFX 15 with JDK 15, you will need to perform a series of steps every time you want to create a JavaFX project:
+
+       1.	Create a new JavaFX project like usual, by selecting New Project -> JavaFX. Use the latest version of the JDK (15).
+       2.	Add the JavaFX libraries to the project. Go to File -> Project Structure -> Libraries. Click the + sign to add a library. Select Java. You will be asked to select the folder where the library has been installed. Select the path of your OpenJFX installation. You should select the “bin” subfolder. If you installed it in the Java folder, it should be “C:\Program Files\Java\javafx-sdk-15\bin”. Click OK. Optional: You may wish to change the name from “bin” to something more appropriate, like “javafx-sdk-15”. Click OK again to exit this screen.
+       3.	Next, you will have to select custom VM options. Go to Run -> Edit Configurations. Click the arrow icon in the field for VM options to enlarge the input box. In this input box, paste the following text:
+
+--module-path "C:\Program Files\Java\javafx-sdk-15\lib" --add-modules=javafx.controls,javafx.fxml
+
+Make sure paste the text exactly as-is, all spaces and quotes included. The path to JavaFX should be changed to the correct one if you have not installed it in "C:\Program Files\Java\javafx-sdk-15\lib".
+
+You should now be able to Build and Run your project.
+
+Related links:
+
+OpenJFX website
+https://openjfx.io/
+
+Download latest JDK (15)
+https://www.oracle.com/java/technologies/javase-downloads.html
+    </p>
 </body>
+</html>
