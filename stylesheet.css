@@ -5,7 +5,6 @@ body {
 .navbar {
   position: fixed;
   margin-top: -15px;
-/*  border: 3px solid black;*/
   padding-right: 2px;
   padding-left: 0px;
   margin-left: -20px;
@@ -16,15 +15,28 @@ h2 {
   margin-left: 150px;
 }
 
-p, ol {
+p {
   margin-left: 150px;
   line-height: 1.6;
+  margin-right: 35%;
+}
+
+ol {
+  margin-left: 180px;
+  line-height: 1.6;
+  margin-right: 30%;
 }
 
 h1 {
   margin-left: 150px;
+  margin-right: 50px;
   background-image: url("code1.jpg");
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+div {
+  font-family: monospace;
+  margin-left: 150px;
 }

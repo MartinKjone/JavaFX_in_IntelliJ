@@ -37,9 +37,9 @@
   <!-- text 1 -->
   <h2 id="Scenebuilder">Scenebuilder</h2>
     <p>You will need to download and set up Scenebuilder no matter which method you choose.
-       Download it by using the <a href=" https://gluonhq.com/products/scene-builder/" target="_blank">link</a> below. <br>In IntelliJ,
+       Download it by using the <a href=" https://gluonhq.com/products/scene-builder/" target="_blank">link</a> below. In IntelliJ,
        go to File &rarr; Settings &rarr; Languages & Frameworks &rarr; JavaFX.
-       Select the correct path. <br>In Windows, it will be
+       Select the correct path. In Windows, it will be
        “C:\Program Files\SceneBuilder\SceneBuilder.exe”
        if you have selected the default install location.
        <br>
@@ -75,7 +75,7 @@
   <!-- text 3 -->
   <h2 id="OpenJFX">Using OpenJFX</h2>
     <p>First, make sure you have JDK 15. If not, download it from the
-      <a href"https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Oracle website.<a>
+      <a href"https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Oracle website.<a><br>
       Next, download JavaFX 15 from the <a href="https://openjfx.io/" target="_blank">OpenJFX website.<a>
       Select the “SDK” for your operating system.
       Install the software in an appropriate location. I recommend “.../Program Files/Java” if you are on Windows.
@@ -88,14 +88,16 @@
          Click the + sign to add a library. Select Java. You will be asked to select the folder where the library has been installed.
          Select the path of your OpenJFX installation. You should select the “bin” subfolder. If you installed it in the Java folder, it should be “C:\Program Files\Java\javafx-sdk-15\bin”. Click OK.
          Optional: You may wish to change the name from “bin” to something more appropriate, like “javafx-sdk-15”. Click OK again to exit this screen.</li><br>
-       <li>Next, you will have to select custom VM options. Go to Run &rarr; Edit Configurations. Click the arrow icon in the field for VM options to enlarge the input box. In this input box, paste the following text:
-         --module-path "C:\Program Files\Java\javafx-sdk-15\lib" --add-modules=javafx.controls,javafx.fxml</li>
+       <li>Next, you will have to select custom VM options. Go to Run &rarr; Edit Configurations. Click the arrow icon in the field for VM options to enlarge the input box. In this input box, paste the following text:</li>
      </ol>
     </p>
 
     <!-- Had to add a separate paragraph to make margin left work -->
+    <div>
+      --module-path "C:\Program Files\Java\javafx-sdk-15\lib" --add-modules=javafx.controls,javafx.fxml
+    </div>
+      <br>
     <p>
-
       Make sure paste the text exactly as-is, all spaces and quotes included.
       The path to JavaFX should be changed to the correct one if you have not installed it in<br>
       "C:\Program Files\Java\javafx-sdk-15\lib".
