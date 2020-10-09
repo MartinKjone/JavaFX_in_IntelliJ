@@ -39,4 +39,6 @@ h1 {
 div {
   font-family: monospace;
   margin-left: 150px;
+  border-style: outset;
+  width: 56%;
 }
