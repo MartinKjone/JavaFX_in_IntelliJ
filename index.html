@@ -3,14 +3,26 @@
 <head>
 <title>JavaFX_in_IntelliJ</title>
 
+<link type="text/CSS" rel="stylesheet" href= "stylesheet.css"/>
 
 </head>
 
 <!--ADD NAV BAR, AND HEADING BACKGROUND -->
 
 <body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href ="#Introduction">Introduction</a>
+      <li><a href ="#Scenebuilder">Scenebuilder</a>
+      <li><a href ="#JDK 1.8">JDK 1.8</a>
+      <li><a href ="#OpenJFX">OpenJFX</a>
+    </ul>
+  </div>
+
   <!-- intro text -->
-  <h1>How to get JavaFX to work with IntelliJ.</h1>
+  <h1 id="Introduction">How to get JavaFX to work with IntelliJ.</h1>
+
 
   <h2>Introduction</h2>
     <p>If you are taking the class DAPE1400 Programming at OsloMet,
@@ -25,7 +37,7 @@
   </p>
 
   <!-- text 1 -->
-  <h2>Scenebuilder</h2>
+  <h2 id="Scenebuilder">Scenebuilder</h2>
     <p>You will need to download and set up Scenebuilder no matter which method you choose.
        Download it by using the link below. In IntelliJ,
        go to File -> Settings -> Languages & Frameworks -> JavaFX.
@@ -44,7 +56,7 @@
     </p>
 
   <!-- text 2 -->
-  <h2>Using JDK 1.8</h2>
+  <h2 id="JDK 1.8">Using JDK 1.8</h2>
     <p>Download version 1.8 of the JDK on the Oracle website. You will need to create an Oracle account and verify your e-mail address.
        By doing so you agree to receive marketing material from Oracle. You can unsubscribe on this website by entering your e-mail address.
        Run the installer and install the JDK in the recommended location.
@@ -67,7 +79,7 @@
     </p>
 
   <!-- text 3 -->
-  <h2>Using OpenJFX</h2>
+  <h2 id="OpenJFX">Using OpenJFX</h2>
     <p>First, make sure you have JDK 15. If not, download it from the Oracle website. Next, download JavaFX 15 from the OpenJFX website. Select the “SDK” for your operating system. Install the software in an appropriate location. I recommend “.../Program Files/Java” if you are on Windows. Make sure not to install it over the actual JDK folder. In any case, take note of where you have installed the software, as you will need the path in the next steps.
        To use OpenJFX 15 with JDK 15, you will need to perform a series of steps every time you want to create a JavaFX project:<br>
       <ol>
@@ -75,6 +87,9 @@
        <li>Add the JavaFX libraries to the project. Go to File -> Project Structure -> Libraries. Click the + sign to add a library. Select Java. You will be asked to select the folder where the library has been installed. Select the path of your OpenJFX installation. You should select the “bin” subfolder. If you installed it in the Java folder, it should be “C:\Program Files\Java\javafx-sdk-15\bin”. Click OK. Optional: You may wish to change the name from “bin” to something more appropriate, like “javafx-sdk-15”. Click OK again to exit this screen.</li><br>
        <li>Next, you will have to select custom VM options. Go to Run -> Edit Configurations. Click the arrow icon in the field for VM options to enlarge the input box. In this input box, paste the following text:
 --module-path "C:\Program Files\Java\javafx-sdk-15\lib" --add-modules=javafx.controls,javafx.fxml</li>
+</ol></p>
+<!-- Had to add another paragraph to make margin left work -->
+<p>
 
 Make sure paste the text exactly as-is, all spaces and quotes included. The path to JavaFX should be changed to the correct one if you have not installed it in "C:\Program Files\Java\javafx-sdk-15\lib".
 
@@ -88,5 +103,6 @@ https://openjfx.io/
 Download latest JDK (15)
 https://www.oracle.com/java/technologies/javase-downloads.html
     </p>
+
 </body>
 </html>
