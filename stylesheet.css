@@ -11,6 +11,15 @@ body {
   border-width: 2px;
 }
 
+h1 {
+  margin-left: 150px;
+  margin-right: 50px;
+  background-image: url("code1.jpg");
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
 h2 {
   margin-left: 150px;
 }
@@ -25,15 +34,6 @@ ol {
   margin-left: 180px;
   line-height: 1.6;
   margin-right: 30%;
-}
-
-h1 {
-  margin-left: 150px;
-  margin-right: 50px;
-  background-image: url("code1.jpg");
-  color: white;
-  padding: 20px;
-  text-align: center;
 }
 
 div {
